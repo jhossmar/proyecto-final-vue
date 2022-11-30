@@ -8,7 +8,7 @@ services:
     ports:
       - "80:80"
   web-back:
-    image: proyecto-final-django_web:latest
+    image: servicios_back_django-web:latest
     command: python manage.py runserver 0.0.0.0:8000
     ports:
       - "8000:8000"
