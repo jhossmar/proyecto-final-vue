@@ -7,10 +7,10 @@ services:
     build: .        
     ports:
       - "80:80"
-  web-back:
-    image: servicios_back_django-web:latest
-    command: python manage.py runserver 0.0.0.0:8000
-    ports:
+  #web-back:
+  #  image: servicios_back_django-web:latest
+   # command: python manage.py runserver 0.0.0.0:8000
+   # ports:
       - "8000:8000"
   bd: 
     image: clue/json-server:latest
